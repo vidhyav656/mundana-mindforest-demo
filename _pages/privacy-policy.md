@@ -37,7 +37,6 @@ This Privacy Policy is effective and will remain in effect except with respect t
 
 We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.
 
-
 #### Contact Information
 
 For any questions or concerns regarding the privacy policy, please [contact us here]({{site.baseurl}}/contact.html).
