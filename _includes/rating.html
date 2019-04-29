@@ -1,15 +1,12 @@
-<div class="post-reviews">
-  {% assign reviews = site.data.reviews | where:'blog',page.slug %}
-  {% assign reviewCount = reviews | size %}
-  {% assign sum = 0 %}
-  {% for review in reviews %}
-    {% assign sum = sum | plus: review.review %}
-  {% endfor %}
-
-  <span>Reviews
+{% assign reviews = site.data.reviews | where:'blog',page.slug %}
+{% assign reviewCount = reviews | size %}
+{% assign sum = 0 %}
+{% for review in reviews %}
+{% assign sum = sum | plus: review.review %}
+{% endfor %}
+<span class="text-muted d-block mt-1">Rating
     {% if reviewCount > 0 %}
-      {% assign sum = sum | divided_by:reviewCount %}
-      (Average: {{ sum | round: 1 }})
+    {% assign sum = sum | divided_by:reviewCount %}
+    (Average: {{ sum | round: 1 }})
     {% endif %}
-  </span>
-</div>
+</span>

@@ -1,9 +1,9 @@
 ---
 layout: post
-author: jane
 categories: [ Jekyll, tutorial ]
 image: assets/images/home.jpg
 tags: featured
+permalink: "tables-with-markdown"
 ---
 
 ### Tables
