@@ -6,37 +6,6 @@
 
 ;(function(){
 
-/**
- * A convenience function for configuring and constructing
- * a new lunr Index.
- *
- * A lunr.Builder instance is created and the pipeline setup
- * with a trimmer, stop word filter and stemmer.
- *
- * This builder object is yielded to the configuration function
- * that is passed as a parameter, allowing the list of fields
- * and other builder parameters to be customised.
- *
- * All documents _must_ be added within the passed config function.
- *
- * @example
- * var idx = lunr(function () {
- *   this.field('title')
- *   this.field('body')
- *   this.ref('id')
- *
- *   documents.forEach(function (doc) {
- *     this.add(doc)
- *   }, this)
- * })
- *
- * @see {@link lunr.Builder}
- * @see {@link lunr.Pipeline}
- * @see {@link lunr.trimmer}
- * @see {@link lunr.stopWordFilter}
- * @see {@link lunr.stemmer}
- * @namespace {function} lunr
- */
 var lunr = function (config) {
   var builder = new lunr.Builder
 
@@ -55,10 +24,6 @@ var lunr = function (config) {
 }
 
 lunr.version = "2.1.5"
-/*!
- * lunr.utils
- * Copyright (C) 2017 Oliver Nightingale
- */
 
 /**
  * A namespace containing utils for the rest of the lunr library
