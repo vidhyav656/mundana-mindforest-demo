@@ -38,7 +38,7 @@ markdown: kramdown
 highlighter: rouge
 
 # AMP Directory
-ampdir: _pages/
+ampdir: /_pages/amp/
 
 # Paginate
 paginate: 10
